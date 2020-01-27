@@ -1,0 +1,34 @@
+{
+  "name": "prismas2-heroku-bug-demonstrator",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "generate": "yarn prisma2 generate",
+    "tsc": "tsc --noEmit",
+    "dev": "next",
+    "build": "next build",
+    "postinstall": "yarn -s run generate",
+    "start": "next start -p $PORT"
+  },
+  "dependencies": {
+    "@prisma/client": "^2.0.0-preview020.3",
+    "@prisma/sdk": "0.0.172",
+    "dotenv": "^8.1.0",
+    "next": "^9.2.1",
+    "next-compose-plugins": "^2.2.0",
+    "prisma2": "^2.0.0-preview020.3",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "typescript": "^3.7.5"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "16.9.5"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "all",
+    "printWidth": 150
+  }
+}

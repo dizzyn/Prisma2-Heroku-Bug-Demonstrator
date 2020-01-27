@@ -1,0 +1,23 @@
+datasource prod {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  enabled  = env("DATASOURCE_PROD")
+}
+
+datasource dev {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+  enabled  = env("DATASOURCE_DEV")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Apple {
+  id            String  @default(uuid()) @id
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  color         String
+}
+
