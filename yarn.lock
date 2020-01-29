@@ -942,10 +942,10 @@
   dependencies:
     debug "^4.1.1"
 
-"@prisma/sdk@0.0.172":
-  version "0.0.172"
-  resolved "https://registry.yarnpkg.com/@prisma/sdk/-/sdk-0.0.172.tgz#42426d4c37ce46ed108cbeb60bcb3544b9f61642"
-  integrity sha512-XrfPOKTaW6Hh1pQZWqOWA5bN5M8evY5nqGMTaG0i2qSxNyannG+5PaVOy3DxshSDb27e2X0dt+gFbis+hy19fQ==
+"@prisma/sdk@0.0.176":
+  version "0.0.176"
+  resolved "https://registry.yarnpkg.com/@prisma/sdk/-/sdk-0.0.176.tgz#ffae6560a5a8d54add0bbdbd6baf0fc39d0d4296"
+  integrity sha512-TgeM2MEtcuCqW32AOvwx0ucSIl6LRpGEtQSNwGLXTUdTzR2BNXAIqCEjm0x44+7aXhLYBYfMgJQAaKYP5OBUrw==
   dependencies:
     "@apexearth/copy" "^1.4.4"
     "@prisma/engine-core" "2.0.41"
@@ -3414,6 +3414,8 @@ is-glob@^4.0.0, is-glob@^4.0.1, is-glob@~4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/is-glob/-/is-glob-4.0.1.tgz#7567dbe9f2f5e2467bc77ab83c4a29482407a5dc"
   integrity sha512-5G0tKtBTFImOqDnLB2hG6Bp2qcKEFduo4tZu9MT/H6NQv/ghhy30o55ufafxJ/LdH79LLs2Kfrn85TLKyA7BUg==
+  dependencies:
+    is-extglob "^2.1.1"
 
 is-number@^3.0.0:
   version "3.0.0"
